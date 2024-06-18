@@ -74,11 +74,11 @@ const Input = ({ isEditing, itemToEdit }: InputProps) => {
   return (
     <form
       onSubmit={createTodo}
-      className="w-full flex border border-slate-400 rounded-xl mb-4"
+      className="w-full flex mb-4"
     >
       <input
         disabled={isLoading}
-        className=" py-6 px-6 w-full outline-none rounded-l-xl text-xl"
+        className=" py-4 px-4 w-full rounded-l-xl text-lg border border-slate-300"
         type="text"
         placeholder="Create todo..."
         value={todoTitle}
@@ -87,7 +87,7 @@ const Input = ({ isEditing, itemToEdit }: InputProps) => {
         autoFocus={isEditing}
       />
       <button
-        className={`text-xl rounded-r-xl w-[200px] text-white bg-slate-800 font-bold hover:bg-slate-600 ${
+        className={`text-lg rounded-r-xl w-[200px] text-white bg-slate-800 font-bold hover:bg-slate-600 ${
           todoTitle && "bg-slate-500"
         }`}
         type="submit"

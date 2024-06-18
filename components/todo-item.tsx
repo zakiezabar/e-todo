@@ -87,15 +87,15 @@ const TodoItem = ({
   };
 
   const todoItemStyle = isCompleted
-    ? "w-full rounded-lg border p-4 flex bg-green-100 text-green-600"
-    : "w-full rounded-lg border p-4 flex";
+    ? "w-full rounded-lg border p-2 flex bg-green-100 text-green-600 gap-4 items-center"
+    : "w-full rounded-lg border p-2 flex bg-white";
 
   return (
     <li className={todoItemStyle} >
       {title}
       <div className="ml-auto flex space-x-6">
         {isCompleted && (
-          <p className="text-slate-600 text-xs italic font-bold">
+          <p className="text-slate-600 text-xs italic font-bold text-center">
             completed on {updatedAt}
           </p>
         )}
